@@ -129,7 +129,7 @@ body{
 }
 
 .card-modal-quester > span:last-child{
-    background: var(--color-quaternary);
+    background: var(--color-six);
     color: var(--color-tertiary);
     width: 95%;
     border-radius: 10px;
