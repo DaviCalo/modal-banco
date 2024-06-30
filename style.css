@@ -26,8 +26,8 @@ body{
 
 #background{
     position: absolute;
-    height: 70%;
-    width: 30%;
+    height: 80%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,18 +44,101 @@ body{
     align-items: center;
     width: 100%;
     height: 30%;
-    background: red;
 }
+
+#name-modal-quester{
+    font: 800 40px 'Sora';
+}
+
+#details-top-modal{
+    font: 300 24px 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+#details-top-modal > span{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#details-top-modal > span > svg, #details-top-modal > span > svg > path{
+    width: 20px;
+    height: 20px;
+    fill: #FFF;
+}
+
+
+
+
 
 #main-modal{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
     height: 70%;
-    background: blue;
+    background: #757575;
+    overflow-y: scroll;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    gap: 10px;
 }
+
+
+#main-modal::-webkit-scrollbar-track {
+    border-radius: 10px;  margin: 10px;
+}
+   
+#main-modal::-webkit-scrollbar {
+  
+    width: 10px;
+    background: none;
+    border-radius: 10px;
+}
+
+#main-modal::-webkit-scrollbar-thumb {
+    background: var(--color-primary); 
+    border-radius: 10px;
+}
+
+.card-modal-quester{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin: 5px;
+    font: 700 14px 'Montserrat';
+    color: #010101;
+    gap: 8px;
+}
+
+.card-modal-quester > span:last-child{
+    background: #A7A7A7;
+    color: #FFF;
+    width: 95%;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
 
 #bottom-modal{
     display: flex;
@@ -65,4 +148,11 @@ body{
     width: 100%;
     height: 30%;
     background: green;
+}
+
+#bottom-modal > details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
