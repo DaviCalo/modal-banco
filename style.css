@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
 
 :root{
-    --color-primary: #60D4EA;
-    --color-primary-one: #12203F;
-    --color-secondary: #010101;
-    --color-tertiary: #373739;
-    --color-quaternary: #9BEAF2;
+    --color-primary: #062440;
+    --color-primary-one: #005A7C;
+    --color-primary-two: #87B9F5;
+    --color-secondary: #FFFFFF;
+    --color-tertiary: #000000;
+    --color-quaternary: #FFA61C;
+    --color-five: #FFA61C;
+    --color-six: #FF7D17;;
 }
 
 html, body {
@@ -22,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #000000;
 }
 
 #background{
@@ -34,7 +38,7 @@ body{
     align-items: center;
     border-radius: 12px;
     padding: 15px;
-    background-color: var(--color-primary-one);
+    background-color: var(--color-primary);
 }
 
 #top-modal{
@@ -84,7 +88,7 @@ body{
     align-items: center;
     width: 100%;
     height: 70%;
-    background: #757575;
+    background: transparent;
     overflow-y: scroll;
     padding: 5px;
     box-sizing: border-box;
@@ -98,14 +102,13 @@ body{
 }
    
 #main-modal::-webkit-scrollbar {
-  
-    width: 10px;
+    width: 8px;
     background: none;
     border-radius: 10px;
 }
 
 #main-modal::-webkit-scrollbar-thumb {
-    background: var(--color-primary); 
+    background: var(--color-tertiary); 
     border-radius: 10px;
 }
 
@@ -116,20 +119,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #D9D9D9;
+    background: var(--color-primary-two);
     border-radius: 10px;
     margin: 5px;
     font: 700 14px 'Montserrat';
-    color: #010101;
+    color: var(--color-tertiary);
     gap: 8px;
+    word-wrap: break-word;
 }
 
 .card-modal-quester > span:last-child{
-    background: #A7A7A7;
-    color: #FFF;
+    background: var(--color-quaternary);
+    color: var(--color-tertiary);
     width: 95%;
     border-radius: 10px;
-    padding: 2px;
+    padding: 5px;
 }
 
 
@@ -146,13 +150,41 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 30%;
-    background: green;
+    height: 20%;
 }
 
-#bottom-modal > details{
+#bottom-modal > button{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2px;
+    width: 82%;
+    height: 50%;
+    background: var(--color-primary-one);
+    border: none;
+    border-radius: 10px;
+    font: 500 24px 'Montserrat';
+    color: #FFF;
+    cursor: pointer;
+}
+
+#bottom-modal > button > svg, #bottom-modal > button > svg > path{
+    width: 25px;
+    height: 25px;
+    fill:#FFF;
+}
+
+#details-bottom-modal{
+    background: var(--color-primary-two);
+    position: absolute;
+    border-radius: 2%;
+    color: var(--color-tertiary);
+    width: 76%;
+    height: 15%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 93.5%;
+    padding: 5px;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
