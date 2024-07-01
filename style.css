@@ -39,6 +39,7 @@ body{
     border-radius: 12px;
     padding: 15px;
     background-color: var(--color-primary);
+    word-wrap: break-word;
 }
 
 #top-modal{
@@ -108,7 +109,7 @@ body{
 }
 
 #main-modal::-webkit-scrollbar-thumb {
-    background: var(--color-tertiary); 
+    background: var(--color-primary-one); 
     border-radius: 10px;
 }
 
@@ -177,7 +178,7 @@ body{
 #details-bottom-modal{
     background: var(--color-primary-two);
     position: absolute;
-    border-radius: 2%;
+    border-radius: 10px;
     color: var(--color-tertiary);
     width: 76%;
     height: 15%;
@@ -187,4 +188,29 @@ body{
     padding: 5px;
     word-wrap: break-word;
     box-sizing: border-box;
+    font: 700 14px 'Montserrat'; 
+    display: none;
+}
+
+
+#details-bottom-modal::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 5px;
+}
+   
+#details-bottom-modal::-webkit-scrollbar {
+    width: 5px;
+    background: none;
+    border-radius: 10px;
+}
+
+#details-bottom-modal::-webkit-scrollbar-thumb {
+    background: var(--color-primary-one); 
+    border-radius: 10px;
+}
+
+#details-bottom-modal > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
