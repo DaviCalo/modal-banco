@@ -120,18 +120,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--color-primary-two);
+    background: var(--color-primary-one);
     border-radius: 10px;
     margin: 5px;
-    font: 700 14px 'Montserrat';
-    color: var(--color-tertiary);
+    font: 600 14px 'Montserrat';
+    color: var(--color-secondary);
     gap: 8px;
     word-wrap: break-word;
+    box-shadow: var(--color-primary-two) 0px 0px 2px;
 }
 
 .card-modal-quester > span:last-child{
-    background: var(--color-six);
-    color: var(--color-tertiary);
+    background: var(--color-primary);
+    color: var(--color-six);
     width: 95%;
     border-radius: 10px;
     padding: 5px;
